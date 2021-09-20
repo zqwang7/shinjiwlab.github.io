@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>WAVLab | Research Activities</title>
+<title>WAVLab | Open-source</title>
 <meta name="description" content="Webpage of Watanabe's Audio and Voice (WAV) Lab
 ">
 
@@ -31,7 +31,7 @@
 
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/open_source">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -143,9 +143,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/open_source">
                 Open-source
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -171,7 +173,7 @@
           
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               Activities
               
@@ -199,54 +201,124 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Research Activities</h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Open-source</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p>Our lab has been led and participated in the development of several open-source toolkits and datasets. The followings are some selected ones.</p>
+
+<h3 id="softwares">Softwares</h3>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="https://github.com/espnet/espnet">
+        <img src="/assets/img/espnet_logo1.png" width="150" />
+      </a>
+</td>
+<td>
+  <strong>ESPnet</strong> is an end-to-end speech processing toolkit, with a broad coverage of speech recognition, text-to-speech, speech enhancement/separation, and speech translation. ESPnet uses pytorch as a main deep learning engine, and also follows Kaldi style data processing, feature extraction/format, and recipes to provide a complete setup for speech recognition and other speech processing experiments.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25" style="display:table-cell; vertical-align:middle; text-align:center">
+      <a href="https://github.com/kaldi-asr/kaldi">
+        <img src="/assets/img/kaldi-logo.png" width="100" />
+      </a>
+</td>
+<td>
+  <strong>Kaldi</strong> is a toolkit for speech recognition written in C++ and licensed under the Apache License v2.0. Kaldi is intended for use by speech recognition researchers.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="https://github.com/s3prl/s3prl">
+        <img src="/assets/img/S3PRL-logo.png" width="150" />
+      </a>
+</td>
+<td>
+  This is an open source toolkit called <strong>s3prl</strong>, which stands for <strong>S</strong>elf-<strong>S</strong>upervised <strong>S</strong>peech <strong>P</strong>re-training and <strong>R</strong>epresentation <strong>L</strong>earning. Self-supervised speech pre-trained models are called <strong>upstream</strong> in this toolkit, and are utilized in various <strong>downstream</strong> tasks.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25" style="display:table-cell; vertical-align:middle; text-align:center">
+      <a href="https://github.com/freewym/espresso">
+        <img src="/assets/img/espresso_logo.png" width="100" />
+      </a>
+</td>
+<td>
+  <strong>Espresso</strong> is an open-source, modular, extensible end-to-end neural automatic speech recognition (ASR) toolkit based on the deep learning library PyTorch and the popular neural machine translation toolkit fairseq. Espresso supports distributed training across GPUs and computing nodes, and features various decoding approaches commonly employed in ASR, including look-ahead word-based language model fusion, for which a fast, parallelized decoder is implemented.
+</td></tr>
+</table>
+<hr />
+
+<h3 id="datasets">Datasets</h3>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="https://chimechallenge.github.io/chime6/">
+        <img src="/assets/img/chime-logo.png" width="150" />
+      </a>
+</td>
+<td>
+  Following the success of the 1st, 2nd, 3rd, 4th and 5th CHiME challenges, we are pleased to announce the 6th <strong>CHiME</strong> Speech Separation and Recognition Challenge (CHiME-6). The new challenge will consider distant multi-microphone conversational speech diarization and recognition in everyday home environments. Speech material was elicited using a dinner party scenario with efforts taken to capture data that is representative of natural conversational speech.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="https://datasets.kensho.com/datasets/spgispeech">
+        SPGISpeech
+      </a>
+</td>
+<td>
+  <strong>SPGISpeech</strong> is a corpus of 5,000 hours of professionally-transcribed financial audio. In contrast to previous transcription datasets, SPGISpeech contains a broad cross-section of L1 and L2 English accents, strongly varying audio quality, and both spontaneous and narrated speech. The transcripts have each been cross-checked by multiple professional editors for high accuracy and are fully formatted, including capitalization, punctuation, and denormalization of non-standard words.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="http://www.openslr.org/89/">
+        ASR corpus for endangered language documentation (Yoloxóchitl Mixtec)
+      </a>
+</td>
+<td>
+  Substantive material of <strong>Yoloxóchitl Mixtec</strong> speech corpus (Glottocode: yolo1241 | ISO 639-3 = xty) presented here was brought together over ten years by Jonathan D. Amith (PI) and Rey Castillo García, a native speaker linguist from the community of Yoloxóchitl. The corpus is designed for ASR research in endangered language documentation.
+</td></tr>
+</table>
+<hr />
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="col-sm w-25">
+      <a href="http://www.openslr.org/89/">
+        ASR and ST corpus for endangered language documentation (Puebla Nahuatl)
+      </a>
+</td>
+<td>
+  The substantive material of <strong>Puebla Nahuatl</strong> speech corpus was gathered over ten years by Jonathan D. Amith (PI) and a team of native-speaker colleagues who have participated in the project for many years, one from its inception in 2009. The corpus is designed for ASR &amp; MT research in endangered language documentation.
+</td></tr>
+</table>
+<hr />
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/activities/2021/paper-list/">2021 Papers</a></h3>
-        <p class="post-meta">September 10, 2021</p>
-        <p>2018 Paper List</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/activities/2021/reading-group/">2021 Reading Group</a></h3>
-        <p class="post-meta">September 9, 2021</p>
-        <p>Paper list and comments for reading group</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/activities/2020/paper-list/">2020 Papers</a></h3>
-        <p class="post-meta">December 31, 2020</p>
-        <p>2020 Paper List</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="Research Activities">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="Research Activities - page 2">2</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
